@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Frasetya Muhamad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">AD</div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- BACKGROUND -->
+    <div class="bg-animation">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Frasetya Muhamad</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#contact" class="nav-cta">Hubungi Saya</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        Tersedia untuk Proyek Baru
+                    </div>
+                    <h1 class="hero-title">
+                        Halo, Saya <br>
+                        <span class="gradient-text">Frasetya Muhamad</span> 👋
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typed-text" id="typedText"></span><span class="cursor-blink"></span>
+                    </div>
+                    <p class="hero-desc">
+                        Saya seorang Full Stack Developer yang passionate dalam membangun 
+                        pengalaman digital yang indah, cepat, dan fungsional. Saya mengubah 
+                        ide menjadi kenyataan melalui kode yang bersih dan desain yang elegan.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            <i class="fas fa-rocket"></i> Lihat Proyek
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-envelope"></i> Hubungi Saya
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="stat1">0</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="stat2">0</div>
+                            <div class="stat-label">Proyek Selesai</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="stat3">0</div>
+                            <div class="stat-label">Klien Puas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-bg"></div>
+                        <div class="hero-avatar">
+                            👨‍💻
+                        </div>
+                        <div class="floating-card floating-card-1">
+                            <span class="card-icon">⚡</span>
+                            <div class="card-text">
+                                <strong>Fast Delivery</strong>
+                                <span>On Time Always</span>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-2">
+                            <span class="card-icon">🏆</span>
+                            <div class="card-text">
+                                <strong>Best Quality</strong>
+                                <span>Clean Code</span>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-3">
+                            <span class="card-icon">⭐</span>
+                            <div class="card-text">
+                                <strong>4.9 Rating</strong>
+                                <span>50+ Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <div class="about-image-card">
+                        <span class="about-avatar-emoji">👨‍💻</span>
+                        <div class="about-name">Frasetya Muhamad</div>
+                        <div class="about-role-badge">Full Stack Developer</div>
+                        <div class="about-floating-stats">
+                            <div class="mini-stat">
+                                <div class="mini-stat-num">5+</div>
+                                <div class="mini-stat-label">Tahun Exp</div>
+                            </div>
+                            <div class="mini-stat">
+                                <div class="mini-stat-num">50+</div>
+                                <div class="mini-stat-label">Proyek</div>
+                            </div>
+                            <div class="mini-stat">
+                                <div class="mini-stat-num">30+</div>
+                                <div class="mini-stat-label">Klien</div>
+                            </div>
+                            <div class="mini-stat">
+                                <div class="mini-stat-num">100%</div>
+                                <div class="mini-stat-label">Dedikasi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content animate-on-scroll">
+                    <div class="section-tag">
+                        <i class="fas fa-user"></i> Tentang Saya
+                    </div>
+                    <h2 class="section-title">
+                        Passionate Developer & <span class="gradient-text">Creative Thinker</span>
+                    </h2>
+                    <p class="about-text">
+                        Halo! Saya Alex, seorang Full Stack Developer dengan pengalaman lebih dari 5 tahun 
+                        dalam membangun aplikasi web dan mobile yang modern dan scalable.
+                    </p>
+                    <p class="about-text">
+                        Saya memiliki keahlian dalam React, Node.js, Python, dan berbagai teknologi modern lainnya. 
+                        Saya selalu berusaha untuk menghasilkan kode yang bersih, terstruktur, dan mudah di-maintain.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="info-label">Lokasi</div>
+                                <div class="info-value">Jakarta, Indonesia</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="info-label">Email</div>
+                                <div class="info-value">frasetyamuhamad58@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="info-label">Telepon</div>
+                                <div class="info-value">+62 8811103902</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <div class="info-label">Pendidikan</div>
+                                <div class="info-value">S1 Informatika</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-primary" style="display: inline-flex;">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <div class="skills-header animate-on-scroll">
+                <div class="section-tag" style="margin: 0 auto 20px;">
+                    <i class="fas fa-code"></i> Keahlian
+                </div>
+                <h2 class="section-title">Tech Stack & <span class="gradient-text">Keahlian</span></h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                    Teknologi dan tools yang saya gunakan untuk membangun produk digital yang luar biasa
+                </p>
+            </div>
+
+            <div class="skills-categories animate-on-scroll">
+                <button class="skill-filter-btn active" onclick="filterSkills('all', this)">Semua</button>
+                <button class="skill-filter-btn" onclick="filterSkills('frontend', this)">Frontend</button>
+                <button class="skill-filter-btn" onclick="filterSkills('backend', this)">Backend</button>
+                <button class="skill-filter-btn" onclick="filterSkills('mobile', this)">Mobile</button>
+                <button class="skill-filter-btn" onclick="filterSkills('tools', this)">Tools</button>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-header animate-on-scroll">
+                <div class="section-tag" style="margin: 0 auto 20px;">
+                    <i class="fas fa-laptop-code"></i> Portfolio
+                </div>
+                <h2 class="section-title">Proyek <span class="gradient-text">Terbaru</span></h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                    Beberapa karya terbaik yang pernah saya kerjakan
+                </p>
+            </div>
+
+            <div class="projects-filter animate-on-scroll">
+                <button class="filter-btn active" onclick="filterProjects('all', this)">Semua</button>
+                <button class="filter-btn" onclick="filterProjects('web', this)">Web App</button>
+                <button class="filter-btn" onclick="filterProjects('mobile', this)">Mobile</button>
+                <button class="filter-btn" onclick="filterProjects('ui', this)">UI/UX</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="container">
+            <div class="experience-header animate-on-scroll">
+                <div class="section-tag" style="margin: 0 auto 20px;">
+                    <i class="fas fa-briefcase"></i> Pengalaman
+                </div>
+                <h2 class="section-title">Perjalanan <span class="gradient-text">Karir</span></h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                    Pengalaman profesional yang telah membentuk keahlian saya
+                </p>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <!-- Timeline items injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-header animate-on-scroll">
+                <div class="section-tag" style="margin: 0 auto 20px;">
+                    <i class="fas fa-paper-plane"></i> Kontak
+                </div>
+                <h2 class="section-title">Mari <span class="gradient-text">Berkolaborasi</span></h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                    Punya proyek keren? Mari kita wujudkan bersama!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Ayo Ngobrol! 💬</h3>
+                    <p>
+                        Saya selalu terbuka untuk mendiskusikan proyek baru, ide kreatif, 
+                        atau kesempatan untuk menjadi bagian dari visi Anda.
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-item-label">Email</div>
+                                <div class="contact-item-value">alex@developer.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="contact-item-label">WhatsApp</div>
+                                <div class="contact-item-value">+62 812 3456 7890</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact-item-label">Lokasi</div>
+                                <div class="contact-item-value">Jakarta, Indonesia</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" onsubmit="submitForm(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-input" placeholder="Nama kamu" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-input" placeholder="email@kamu.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-input" placeholder="Subjek pesan" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Pesan</label>
+                                <textarea class="form-textarea" placeholder="Ceritakan proyekmu..." required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                            <div class="form-success" id="formSuccess">
+                                ✅ Pesan terkirim! Saya akan membalas sesegera mungkin.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">Alex.dev</a>
+                <p class="footer-text">
+                    © 2024 Frasetya Muhamad. Dibuat dengan ❤️ menggunakan HTML, CSS & JS
+                </p>
+                <div class="footer-links">
+                    <a href="#about">Tentang</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    
+</body>
+</html>
