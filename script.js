@@ -134,7 +134,7 @@ const projectsData = [
         tags: ['Grafana', 'PostgreSQL', 'HA Replication', 'Mobile Banking'],
         emoji: '📱',
         bg: 'linear-gradient(135deg, rgba(255,107,107,0.2), rgba(255,160,122,0.2))',
-        timeline: '2023 – Sekarang',
+        timeline: '2023 – 2025',
     },
     {
         title: 'AI CCTV Attendance System',
@@ -226,13 +226,13 @@ const experienceData = [
 ];
 
 const certsData = [
-    { name: 'Foundation of Cloud Analytics', date: 'Apr 2026', icon: '☁️', link: '#' },
-    { name: 'Jago AI Automation dengan N8N', date: 'Apr 2026', icon: '🤖', link: '#' },
-    { name: 'Associate Redis Software Operator', date: 'Feb 2026', icon: '🔴', link: '#' },
+    { name: 'Foundation of Cloud Analytics', date: 'Apr 2026', icon: '☁️', link: 'https://www.credly.com/badges/f2b46d8b-71a7-4210-b6a6-a59a5796adc9/linked_in?t=te8x8b' },
+    { name: 'Jago AI Automation dengan N8N', date: 'Apr 2026', icon: '🤖', link: 'https://drive.google.com/file/d/1tItbR4n3xfyNJABL7zEHgwrCVYj_nHd5/view?usp=drive_link' },
+    { name: 'Associate Redis Software Operator', date: 'Feb 2026', icon: '🔴', link: 'https://drive.google.com/file/d/1KCqNPRaaKqx-goAGqRLiOtoaGQ-ujmXf/view?usp=drive_link' },
     { name: 'Associate Google Workspace Administrator', date: 'Sep 2025', icon: '🏆', link: 'https://drive.google.com/file/d/1dbRPIQnlVi6HxRym-sXRJewsWSptsCqo/view' },
     { name: 'Cloud & AI for Digital Business — Komdigi', date: 'Des 2024', icon: '🇮🇩', link: 'https://drive.google.com/file/d/1gIPvWSlpLJC5jaSz7q_Nei95BsHy4T7b/view' },
     { name: 'Cloud & AI Applications — Digitalent', date: 'Des 2024', icon: '💡', link: 'https://drive.google.com/file/d/1Jxv2y4YegO2gDI4x-cSTeTVRMwbVTjhh/view' },
-    { name: 'Partnering with NetApp — Business Value', date: 'Des 2024', icon: '🌐', link: '#' },
+    { name: 'Partnering with NetApp — Business Value', date: 'Des 2024', icon: '🌐', link: 'https://drive.google.com/file/d/133DpsuxnfFCwrIZTgdw1FnootiJN7P0p/view?usp=drive_link' },
     { name: 'Alibaba Cloud Database Sales Fundamental', date: 'Nov 2024', icon: '🗄️', link: 'https://drive.google.com/file/d/16VmMiIeuKzyIP64w2UcZxXZGGmYnaY50/view' },
     { name: 'Industry-Based Competency Test – Database', date: 'Jul 2024', icon: '🧪', link: 'https://drive.google.com/file/d/146whHfPj8FqrPpakME6YcFaKDuyGq53b/view' },
     { name: 'DevOps Engineering — Naradacode', date: 'Mar 2024', icon: '⚙️', link: 'https://drive.google.com/file/d/1OahQubcXUFCkVRgWasWXOvbwN6vXChyL/view' },
